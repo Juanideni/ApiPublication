@@ -1,0 +1,320 @@
+[
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.ImagePublicationController",
+    "Method": "GetImagePublications",
+    "RelativePath": "api/imagePublication",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ChallengeTecnicoLubee.Models.ImagePublication, ChallengeTecnicoLubee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.ImagePublicationController",
+    "Method": "PostImagePublication",
+    "RelativePath": "api/imagePublication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imagePublication",
+        "Type": "ChallengeTecnicoLubee.Models.ImagePublication",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ChallengeTecnicoLubee.Models.ImagePublication",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.ImagePublicationController",
+    "Method": "DeleteImagePublication",
+    "RelativePath": "api/imagePublication/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.PublicationController",
+    "Method": "GetPublications",
+    "RelativePath": "api/publication",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ChallengeTecnicoLubee.Models.Publication, ChallengeTecnicoLubee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.PublicationController",
+    "Method": "PostPublication",
+    "RelativePath": "api/publication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TypeOperation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TypeProperty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Rooms",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SquareMeter",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "Antiquity",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImagesPublication",
+        "Type": "System.Collections.Generic.List\u00601[[ChallengeTecnicoLubee.Models.ImagePublication, ChallengeTecnicoLubee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ChallengeTecnicoLubee.Models.Publication",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.PublicationController",
+    "Method": "GetPublication",
+    "RelativePath": "api/publication/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ChallengeTecnicoLubee.Models.Publication",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.PublicationController",
+    "Method": "PutPublication",
+    "RelativePath": "api/publication/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "TypeOperation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TypeProperty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Rooms",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SquareMeter",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "Antiquity",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImagesPublication",
+        "Type": "System.Collections.Generic.List\u00601[[ChallengeTecnicoLubee.Models.ImagePublication, ChallengeTecnicoLubee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.PublicationController",
+    "Method": "DeletePublication",
+    "RelativePath": "api/publication/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.ImagePublicationController",
+    "Method": "GetImageListByPublicationId",
+    "RelativePath": "by-publicationId/{publicationId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "publicationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ChallengeTecnicoLubee.Models.ImagePublication, ChallengeTecnicoLubee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ChallengeTecnicoLubee.Controllers.ImagePublicationController",
+    "Method": "GetImageByURLImageAndPublicationId",
+    "RelativePath": "by-url-publicationId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "URLImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "publicationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ChallengeTecnicoLubee.Models.ImagePublication",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
